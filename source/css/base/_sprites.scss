@@ -1,0 +1,27 @@
+%svg-common {
+	background: url('../images/sprites.svg') no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.svg-gw-gear {
+	@extend %svg-common;
+	background-position: 0 0 !important;
+	width: 32px;
+	height: 33px;
+}
+
+.svg-soc-fb {
+	@extend %svg-common;
+	background-position: 57.142857142857146% 0 !important;
+	width: 14px;
+	height: 24px;
+}
+
+.svg-soc-tw {
+	@extend %svg-common;
+	background-position: 100% 0 !important;
+	width: 24px;
+	height: 20px;
+}
+
