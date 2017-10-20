@@ -56,7 +56,7 @@ $.ajax({
   url: "[YOURPATHHERE]/images/svg-symbols.svg",
   context: document.body
 }).done(function(data) {
-  $('svg',data).attr('class','visually-hidden').prependTo('body');
+  $('svg',data).attr('class','visually-hidden').attr('aria-hidden','true').prependTo('body');
 });
 ```
 
