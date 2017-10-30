@@ -34,6 +34,7 @@
             "./assets/css/style.css"
         ],
         "js": [
+            "./assets/js/default.js",
             "./assets/js/script.js"
         ]
     },
