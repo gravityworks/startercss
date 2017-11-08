@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     cssmqpacker = require('css-mqpacker'),
     csswring = require('csswring'),
     pngquant = require('imagemin-pngquant'),
+    notify = require('gulp-notify'),
     del = require('del'),
     runSequence = require('run-sequence'),
     browserSync = require('browser-sync').create(),
@@ -66,6 +67,11 @@ var spriteConfig = {
 \*------------------------------------*/
 
 function onError(err) {
+  notify({
+    title: 'Task failed',
+    message: 'See the terminal for details.',
+  }).write(err);
+  gulpUtil.beep();
   console.log(err.toString());
   if (watching) {
     this.emit('end');
@@ -157,7 +163,7 @@ gulp.task('styles', function () {
     return gulp.src(paths.source.styles)
       .pipe(sourcemaps.init()) // Start source maps
       .pipe(sassGlob())
-      .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+      .pipe(sass({outputStyle: 'compressed'}).on('error', onError))
       .pipe(sourcemaps.write('/')) // Finish source maps
       .pipe(gulp.dest(paths.dist.styles))
       .pipe(gulp.dest('./pattern-library/assets/css'))
