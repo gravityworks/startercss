@@ -79,7 +79,7 @@ function onError(err) {
 \*------------------------------------*/
 
 gulp.task('images', function(callback) {
-  runSequence('clean-images', ['imagemin', 'sprites'], callback);
+  runSequence('clean-images', ['imagemin', 'sprites', 'shapes'], callback);
 });
 
 // get rid of old images
