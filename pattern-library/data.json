@@ -110,6 +110,54 @@
             ]
         },
         {
+            "name": "icons",
+            "title": "Icons",
+            "components": [
+                {
+                    "group": "icons",
+                    "name": "facebook",
+                    "title": "Facebook",
+                    "width": "quarter"
+                },
+                {
+                    "group": "icons",
+                    "name": "instagram",
+                    "title": "Instagram",
+                    "width": "quarter"
+                },
+                {
+                    "group": "icons",
+                    "name": "twitter",
+                    "title": "Twitter",
+                    "width": "quarter"
+                },
+                {
+                    "group": "icons",
+                    "name": "youtube",
+                    "title": "YouTube",
+                    "width": "quarter"
+                },
+                {
+                    "group": "icons",
+                    "name": "home",
+                    "title": "Home",
+                    "width": "quarter"
+                },
+                {
+                    "group": "icons",
+                    "name": "gw-gear",
+                    "title": "Gravity Works gear",
+                    "width": "quarter"
+                },
+                {
+                    "name": "gw-gear-new",
+                    "title": "GW gear (2018)",
+                    "width": "quarter",
+                    "group": "icons"
+                }
+            ]
+        },
+        {
             "name": "objects",
             "title": "Objects",
             "components": [

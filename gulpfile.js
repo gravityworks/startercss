@@ -95,6 +95,7 @@ gulp.task('imagemin', function () {
           svgoPlugins: [{removeViewBox: false}],
           use: [pngquant()]
       }))
+      .pipe(gulp.dest('./pattern-library/assets/images'))
       .pipe(gulp.dest(paths.dist.images));
 });
 
@@ -119,6 +120,7 @@ gulp.task('shapes', function () {
             return name.toLowerCase().trim().replace(/\s/g, '-');
         }
     }))
+    .pipe(gulp.dest('./pattern-library/assets/images'))
     .pipe(gulp.dest(paths.dist.images));
 });
 
@@ -130,7 +132,8 @@ gulp.task('scripts', function() {
   return gulp.src(paths.source.scripts)
     .pipe(uglify().on('error', onError))
     .pipe(gulp.dest('./pattern-library/assets/js'))
-    .pipe(gulp.dest(paths.dist.scripts));
+    .pipe(gulp.dest(paths.dist.scripts))
+    .pipe(reload({ stream: true }));
 });
 
 /*------------------------------------*\
