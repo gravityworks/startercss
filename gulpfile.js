@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    autoprefixer = require('gulp-autoprefixer'),
     gulpUtil = require('gulp-util'),
     gulpCopy = require('gulp-copy'),
     sassGlob = require('gulp-sass-glob'),
@@ -164,6 +165,11 @@ gulp.task('styles', function () {
       .pipe(sourcemaps.init()) // Start source maps
       .pipe(sassGlob())
       .pipe(sass({outputStyle: 'compressed'}).on('error', onError))
+      .pipe(autoprefixer({
+          browsers: ['last 5 versions'],
+          cascade: false,
+          // flexbox: 'no-2009'
+      }))
       .pipe(sourcemaps.write('/')) // Finish source maps
       .pipe(gulp.dest(paths.dist.styles))
       .pipe(gulp.dest('./pattern-library/assets/css'))
