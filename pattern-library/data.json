@@ -31,6 +31,7 @@
     },
     "assets": {
         "css": [
+            "./assets/css/default.css",
             "./assets/css/style.css"
         ],
         "js": [

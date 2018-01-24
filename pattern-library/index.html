@@ -105,7 +105,7 @@
                 </div>
             </div>
         </header>
-
+        <button id="sidebar-toggle" onclick="toggleSidebar()" class="sidebar-toggle">Toggle sidebar</button>
         <div class="ndpl-sidebar"
              :class="{ 'open': open_nav }">
 
@@ -292,7 +292,7 @@
     </div>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    
+
     <ndpl-script v-for="script in assets.js"
                  :script="script"
                  v-if="loaded"

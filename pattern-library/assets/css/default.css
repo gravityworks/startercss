@@ -1,0 +1,29 @@
+.ndpl-component--quarter {
+    max-width: 25%;
+    width: 25%;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #2F3D4C;
+    z-index: 9997;
+    /* over sidebar if needed */
+    font-size: 12px;
+    color: #fff;
+    padding: 5px;
+}
+
+.sidebar-hidden .ndpl-sidebar {
+    width: 0;
+}
+
+.sidebar-hidden .ndpl-content {
+    padding: 0;
+}
+
+.sidebar-hidden .ndpl-component__sample {
+    padding: 0;
+    border: 0;
+}
