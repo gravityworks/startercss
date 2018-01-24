@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
-    gulpUtil = require('gulp-util'),
+    beeper = require('beeper'),
     gulpCopy = require('gulp-copy'),
     sassGlob = require('gulp-sass-glob'),
     imagemin = require('gulp-imagemin'),
@@ -72,7 +72,7 @@ function onError(err) {
     title: 'Task failed',
     message: 'See the terminal for details.',
   }).write(err);
-  gulpUtil.beep();
+  beeper();
   console.log(err.toString());
   if (watching) {
     this.emit('end');
