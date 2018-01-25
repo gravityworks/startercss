@@ -66,10 +66,11 @@
                     "title": "Colors",
                     "type": "colors",
                     "colors": [
-                        "#1B789F,#135875",
-                        "#9d539a",
-                        "#99ccbe",
-                        "#000"
+                        "#1B789F|$blue",
+                        "#135875|$blue-alt",
+                        "#9d539a|$pink",
+                        "#99ccbe|$mint",
+                        "#000|$black"
                     ]
                 },
                 {

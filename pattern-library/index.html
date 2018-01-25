@@ -229,14 +229,17 @@
                                     <template v-if="component.type == 'colors'">
                                         <div v-if="component.colors.length" class="ndpl-component__colors ndpl-cf">
 
-                                            <div class="ndpl-component__color-container"
-                                                 v-for="color in component.colors">
+                                            <div class="ndpl-component__color-container" v-for="color in component.colors">
 
-                                                <div class="ndpl-component__color"
-                                                     v-for="item in color.split(',')"
-                                                     :class="{ 'ndpl-apply-border ndpl-c-border': shouldApplyBorder(item), }"
-                                                     :style="'background-color:' + item">
-                                                    <div :class="{ 'ndpl-dark-text': shouldInvertText(item) }">{{ item }}</div>
+                                                <div class="ndpl-component__color" v-for="item in color.split(',')" :class="{ 'ndpl-apply-border ndpl-c-border': shouldApplyBorder(item), }"
+                                                    :style="'background-color:' + item.split('|')[0]">
+                                                    <div :class="{ 'ndpl-dark-text': shouldInvertText(item) }">{{ item.split('|')[0] }}</div>
+                                                </div>
+                                                <div v-for="item in color.split(',')" :class="{ 'ndpl-dark-text': shouldInvertText(item) }">
+                                                    <div class="text-meta">{{ item.split('|')[0] }}</div>
+                                                    <div class="ndpl-component__description">
+                                                        <code>{{ item.split('|')[1] }}</code>
+                                                    </div>
                                                 </div>
 
                                             </div>
