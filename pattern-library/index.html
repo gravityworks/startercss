@@ -247,7 +247,22 @@
                                             <li><pre class="ndpl-pre">"colors": ["#4c4c4c","#7d8284","#a6b1b5","#e6eaf2","#FFFFFF"]</pre></li>
                                         </ul>
                                     </template>
-                                    <template v-else>
+                                    <template v-if="component.type == 'icons'">
+                                        <div v-if="component.icons.length" class="ndpl-component__icons ndpl-cf">
+                                            <div class="ndpl-component__icon-container" v-for="icon in component.icons">
+
+                                                <div class="ndpl-component__icon" v-for="item in icon.split(',')" :class="{ 'ndpl-apply-border ndpl-c-border': shouldApplyBorder(item), }">
+                                                    <div :class="{ 'ndpl-dark-text': shouldInvertText(item) }">{{ item }}</div>
+                                                    <svg>
+                                                        <use xlink:href="#icon-{{ item }}"></use>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </template>
+                                    <template v-if="component.type != 'colors' && component.type != 'icons'">
                                         <div class="ndpl-component__container"
                                              v-show="isCodeVisible()">
 

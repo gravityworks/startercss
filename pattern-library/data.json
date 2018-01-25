@@ -68,7 +68,23 @@
                     "colors": [
                         "#1B789F,#135875",
                         "#9d539a",
-                        "#99ccbe"
+                        "#99ccbe",
+                        "#000"
+                    ]
+                },
+                {
+                    "group": "settings",
+                    "name": "icons",
+                    "title": "Icons",
+                    "type": "icons",
+                    "icons": [
+                        "gw-gear-new",
+                        "gw-gear",
+                        "facebook",
+                        "home",
+                        "instagram",
+                        "twitter",
+                        "youtube"
                     ]
                 }
             ]
