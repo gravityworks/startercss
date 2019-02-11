@@ -188,6 +188,12 @@
                     "group": "objects",
                     "name": "soc-links",
                     "title": "Social Links"
+                },
+                {
+                    "group": "objects",
+                    "name": "card",
+                    "title": "Card",
+                    "width": "half"
                 }
             ]
         },

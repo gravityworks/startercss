@@ -2,6 +2,16 @@
 $blue:           #1B789F;
 $blue-dark:      #135875;
 $text-color:     #000;
+// TODO: change to $color-[name] for colors to make easier to search
+// Consider changing to standardize variable names for colors in elements
+// $text-color:            $black;
+// $focus-color: $peacock-blue;
+// $link-color: $twilight-blue;
+// $link-color-hover: $dusk-blue;
+// $button-color: $peacock-blue;
+// $button-active-color: $green;
+// $soc-link-color: $dusk-blue;
+// $soc-link-active-color: $green;
 
 /* Sizes */
 $gutter-sm: 15px;

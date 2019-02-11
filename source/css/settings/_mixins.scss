@@ -38,3 +38,18 @@
    list-style: none;
   }
 }
+
+// Input placeholder
+@mixin input-placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &::-moz-ploceholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
