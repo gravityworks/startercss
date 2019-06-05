@@ -45,6 +45,12 @@ $ts-h4: 2.1rem;
 $ts-h5: 1.9rem;
 $ts-h6: 1.7rem;
 
+// Animation transition speeds and easings
+$spd-a: 100ms; // instantaneous
+$spd-b: 300ms; // fast
+$spd-c: 400ms; // slow
+$spd-d: 700ms; // deliberate
+
 // Breakpoints
 $max-width:   1300px;
 
