@@ -1,4 +1,4 @@
-/* media queries */
+// media queries
 @mixin mq($break, $type: min) {
   @if $type == max {
     @media (max-width: ($break - 1px)) { @content; }
@@ -7,7 +7,7 @@
   }
 }
 
-/* image related */
+// image related
 @mixin image-replace {
   display: block;
   text-indent: 50%;
@@ -29,7 +29,7 @@
   display: inline-block;
 }
 
-/* lists */
+// lists
 @mixin plain-list {
   margin: 0;
   padding: 0;

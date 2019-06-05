@@ -1,6 +1,4 @@
-/* 
- * Borrowed from skeleton.css v2.0.4 - https://github.com/dhg/Skeleton 
- */
+// Borrowed from skeleton.css v2.0.4 - https://github.com/dhg/Skeleton 
 
 input[type="email"],
 input[type="number"],
@@ -12,7 +10,7 @@ input[type="password"],
 textarea,
 select {
   height: 38px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
   background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
@@ -20,7 +18,7 @@ select {
   box-sizing: border-box; 
 }
 
-/* Removes awkward default styles on some inputs for iOS */
+// Removes awkward default styles on some inputs for iOS
 input[type="email"],
 input[type="number"],
 input[type="search"],

@@ -1,4 +1,4 @@
-/* Colors */
+// Colors
 $blue:           #1B789F;
 $blue-dark:      #135875;
 $text-color:     #000;
@@ -13,7 +13,7 @@ $text-color:     #000;
 // $soc-link-color: $dusk-blue;
 // $soc-link-active-color: $green;
 
-/* Sizes */
+// Sizes
 $gutter-sm: 15px;
 $gutter: 30px;
 
@@ -27,9 +27,9 @@ $transition-long: 450ms;
 
 $third: 33.3333%;
 
-/* Text */
-$font-main: 'Open Sans', sans-serif; /* Weights: Use: */
-$font-secondary: 'Open Sans', sans-serif; /* Weights: Use: */
+// Text
+$font-main: 'Open Sans', sans-serif; // Weights to use: QQQ
+$font-secondary: 'Open Sans', sans-serif; // Weights to use: QQQ
 
 $text-margin: 20px;
 
@@ -44,7 +44,7 @@ $ts-h4: 2.1rem;
 $ts-h5: 1.9rem;
 $ts-h6: 1.7rem;
 
-/* Breakpoints */
+// Breakpoints
 $max-width:   1300px;
 
 $break-sm:    600px;

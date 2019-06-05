@@ -2,7 +2,7 @@ a {
   color: $blue;
   text-decoration: none;
   &:hover, &:focus {
-  	/* color: $blue-dark; */
+  	// color: $blue-dark;
   	text-decoration: underline;
   }
 }
@@ -18,7 +18,7 @@ a {
 	@include visually-hidden;
 	transform: translate(0,-40px);
 	opacity: 0;
-	/* transition: transform $transition-short, opacity $transition-short;*/
+	// transition: transform $transition-short, opacity $transition-short;
 	width: 100%;
 	left: 0;
 	&:focus {
