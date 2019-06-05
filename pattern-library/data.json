@@ -44,17 +44,6 @@
         "typography_web_fonts": null,
         "google_web_fonts": null
     },
-    "content": {
-        "show_first_page_on_load": true,
-        "title": "Overview",
-        "pages": [
-            {
-                "name": "introduction",
-                "title": "Introduction",
-                "file": "./pages/intro.md"
-            }
-        ]
-    },
     "groups": [
         {
             "name": "settings",
@@ -115,6 +104,16 @@
                     "title": "Text"
                 },
                 {
+                    "group": "base",
+                    "name": "css-grid",
+                    "title": "CSS Grid"
+                },
+                {
+                    "group": "base",
+                    "name": "flex-grid",
+                    "title": "Flex grid"
+                },
+                {
                     "name": "tables",
                     "title": "Tables",
                     "options": {},
@@ -146,22 +145,6 @@
                     "name": "card",
                     "title": "Card",
                     "width": "half"
-                }
-            ]
-        },
-        {
-            "name": "grid",
-            "title": "Grid",
-            "components": [
-                {
-                    "name": "flex",
-                    "title": "Flex Grid",
-                    "group": "grid"
-                },
-                {
-                    "group": "grid",
-                    "name": "simple",
-                    "title": "Simple Grid"
                 }
             ]
         },
