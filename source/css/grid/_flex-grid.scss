@@ -19,12 +19,13 @@
   max-width: 100%;
 }
 
-.lg-flex-grid--1of4 {
+.lg-flex-grid--1of2,
+.lg-flex-grid--1of3 {
   > .flex-grid-cell {
-    flex: 0 0 50%;
-    // IE 10 fallback
-    width: 50%;
-    max-width: 50%;
+    flex: 0 0 100%;
+    /* IE 10 fallback */
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -64,4 +65,30 @@
     }
   }
 
+  .lg-flex-grid--1of3 {
+    > .flex-grid-cell {
+      flex: 0 0 $third;
+      /* IE 10 fallback */
+      width: $third;
+      max-width: $third;
+    }
+  }
+
+  .lg-flex-grid--2of3 {
+    > .flex-grid-cell {
+      flex: 0 0 $two-third;
+      /* IE 10 fallback */
+      width: $two-third;
+      max-width: $two-third;
+    }
+  }
+
+  .lg-flex-grid--1of2 {
+    > .flex-grid-cell {
+      flex: 0 0 50%;
+      /* IE 10 fallback */
+      width: 50%;
+      max-width: 50%;
+    }
+  }
 }
