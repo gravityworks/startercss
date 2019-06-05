@@ -1,0 +1,1 @@
+This grid uses CSS Grid for layout, with flexbox as a fallback for browsers that do not support the current Grid spec.
