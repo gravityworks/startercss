@@ -21,7 +21,7 @@
 
 .sidebar-hidden .ndpl-content {
     padding: 0;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     margin: 0 auto;
 }
 
