@@ -26,17 +26,17 @@
   }
 }
 
-@mixin blue-button-base {
+@mixin primary-button-base {
   color: #fff;
-  background: $blue;
+  background: $button-color;
   @include link-states {
-    background: $blue-dark;
+    background: $button-color--hover;
   }
 }
 
 .button {
   @include button-base;
-  @include blue-button-base;
+  @include primary-button-base;
   height: $button-height;
   line-height: $button-height;
   font-size: 1.5rem;
@@ -51,7 +51,7 @@
 
 .button-sm {
   @include button-base;
-  @include blue-button-base;
+  @include primary-button-base;
   height: $button-sm-height;
   line-height: $button-sm-height;
   font-size: 1.5rem;

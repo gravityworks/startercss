@@ -6,7 +6,7 @@
 	$size: 47px;
 	$radius: 50%;
 	
-	background: $blue;
+	background: $soc-link-color;
 	border-radius: $radius;
 	display: inline-block;
 	height: $size;
@@ -21,7 +21,7 @@
 	}
 
 	@include link-states {
-		background: $blue-dark;
+		background: $soc-link-color--hover;
 	}
 }
 

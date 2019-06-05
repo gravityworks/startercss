@@ -2,7 +2,7 @@
 	display: inline-block;
 	padding: $gutter-sm 0;
 	&:not(.media-block--full) {
-		// background: $palegray;
+		// background: $primary-color--light;
 		width: auto;
 		@include mq($break-lg) {
 			width: 100%;
@@ -18,7 +18,7 @@
 }
 .media-block__media {
 	text-align: center;
-	// background: $green;
+	// background: $primary-color--dark;
 	iframe {
 		max-width: 100%;
 	}
@@ -35,7 +35,7 @@
 }
 .media-block__caption {
 	font-weight: bold;
-	// color: $darkgray;
+	// color: $text-color;
 	font-size: 1.6rem;
 	line-height: $text-lh-sm;
 }

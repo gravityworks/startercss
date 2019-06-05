@@ -1,8 +1,8 @@
 a {
-  color: $blue;
+  color: $link-color;
   text-decoration: none;
   @include link-states {
-  	// color: $blue-dark;
+  	// color: $link-color--hover;
   	text-decoration: underline;
   }
 }

@@ -1,17 +1,20 @@
 // Colors
-$blue:           #1B789F;
-$blue-dark:      #135875;
-$text-color:     #000;
-// TODO: change to $color-[name] for colors to make easier to search
-// Consider changing to standardize variable names for colors in elements
-// $text-color:            $black;
-// $focus-color: $peacock-blue;
-// $link-color: $twilight-blue;
-// $link-color-hover: $dusk-blue;
-// $button-color: $peacock-blue;
-// $button-active-color: $green;
-// $soc-link-color: $dusk-blue;
-// $soc-link-active-color: $green;
+$color-blue:           #1B789F;
+$color-blue-dark:      #135875;
+$color-black:          #000;
+
+// Color names
+$primary-color:             $color-blue;
+$primary-color--dark:       $color-blue-dark;
+// $primary-color--light:      ;
+$text-color:                $color-black;
+$selection-color:           $primary-color;
+$button-color:              $color-blue;
+$button-color--hover:      $color-blue-dark;
+$link-color:                $color-blue;
+$link-color--hover:         $color-blue-dark;
+$soc-link-color:            $color-blue;
+$soc-link-color--hover:    $color-blue-dark;
 
 // Sizes
 $gutter-sm: 15px;
