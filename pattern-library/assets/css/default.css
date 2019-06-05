@@ -59,6 +59,7 @@
     padding: 24px 0;
     text-align: center;
     width: 50%;
+    margin-bottom: 10px;
 }
 
 .ndpl-component__icon:first-of-type {
@@ -82,19 +83,20 @@
 .ndpl-component__icon div {
     border: 1px solid #FFF;
     border-radius: 3px;
-    icon: #FFF;
+    /* color: #FFF; */
     display: inline-block;
     font-size: 13px;
     letter-spacing: 1px;
     line-height: 13px;
-    height: 61px;
+    /* height: 61px; */
+    min-height: 40px;
     padding: 6px 9px;
     text-transform: uppercase;
 }
 
 .ndpl-component__icon div.ndpl-dark-text {
-    icon: #B0B1B3 !important;
-    border-icon: #B0B1B3;
+    color: #000 !important;
+    border-color: #B0B1B3;
 }
 
 @media only screen and (min-width: 60em) {
@@ -117,11 +119,5 @@
     .ndpl-component__icon {
         padding: 0;
         width: 100%;
-    }
-    .ndpl-component__icon:first-of-type {
-        border-radius: 6px 6px 0 0;
-    }
-    .ndpl-component__icon:last-of-type {
-        border-radius: 0 0 6px 6px;
     }
 }
