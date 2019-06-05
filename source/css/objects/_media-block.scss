@@ -1,0 +1,51 @@
+.media-block {
+	display: inline-block;
+	padding: $gutter-sm 0;
+	&:not(.media-block--full) {
+		// background: $palegray;
+		width: auto;
+		@include mq($break-lg) {
+			width: 100%;
+		}
+	}
+	&.video--captioned {
+		padding: 0;
+	}
+}
+.media-block--full {
+	width: 100%;
+	margin-bottom: $gutter-sm;
+}
+.media-block__media {
+	text-align: center;
+	// background: $green;
+	iframe {
+		max-width: 100%;
+	}
+	.media-block--full & {
+		width: 100%;
+		iframe {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+.media-block__caption {
+	font-weight: bold;
+	// color: $darkgray;
+	font-size: 1.6rem;
+	line-height: $text-lh-sm;
+}
+
+.media-block__video-frame {
+	margin: 0 auto;
+	clear: both;
+}
+.media-block__video-player {
+	padding-bottom: percentage((9/16));
+	position: relative;
+	height: 0;
+}
