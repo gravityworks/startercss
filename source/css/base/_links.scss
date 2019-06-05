@@ -15,7 +15,7 @@ a {
 }
 
 .skip-nav {
-	@include visually-hidden;
+	// @include visually-hidden;
 	transform: translate(0,-40px);
 	opacity: 0;
 	// transition: transform $transition-short, opacity $transition-short;
@@ -25,17 +25,18 @@ a {
 		color: #fff;
 		transform: translate(0,0);
 		opacity: 1;
-        height: auto;
-        top: -1px;
-        display: block;
-        overflow: auto;
-        clip: auto;
-        z-index: 50;
-        text-align: center;
-        text-decoration: none;
-        padding: 10px;
-        background-color: #000;
-        font-weight: 700;
-        outline: none;
-    }
+    height: auto;
+    top: -1px;
+    display: block;
+    overflow: auto;
+    clip: auto;
+    z-index: 50;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #000;
+    font-weight: 700;
+    outline: none;
+    width: auto;
+  }
 }
